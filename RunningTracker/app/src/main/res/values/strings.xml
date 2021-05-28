@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RunningTracker</string>
+    <string name="start">START</string>
+    <string name="choose_activity">Choose Activity</string>
+    <string name="enter_your_notes_here">Enter your notes here</string>
+    <string name="any_notes">Any notes?</string>
+    <string name="kilometres_run">Kilometres run:</string>
+    <string name="stop">stop</string>
+    <string name="KILOMETRES">KILOMETRES</string>
+    <string name="time">TIME</string>
+    <string name="current_session">CURRENT SESSION</string>
+    <string name="time_elapsed">Time Elapsed:</string>
+    <string name="very_good">Very Good</string>
+    <string name="bad">Bad</string>
+    <string name="save_activity">Save activity</string>
+    <string name="how_did_this_run_feel">How did this run feel?</string>
+    <string name="Good">Good</string>
+    <string name="Name">Name</string>
+    <string name="enter_name_here">Enter Name</string>
+    <string name="previous_sessions">Previous Sessions</string>
+    <string name="not_saved">Not Saved</string>
+    <string name="current_speed">Current Speed</string>
+    <string name="current_duration">Current Duration</string>
+    <string name="current_distance">Current Distance</string>
+</resources>

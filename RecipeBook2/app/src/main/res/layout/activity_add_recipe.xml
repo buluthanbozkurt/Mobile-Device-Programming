@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/recipeNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="@string/Recipe_Name" />
+
+    <EditText
+        android:id="@+id/instructionsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/recipeNameEditText"
+        android:layout_below="@+id/recipeNameEditText"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/Instructions" />
+
+    <EditText
+        android:id="@+id/ingredientsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/instructionsEditText"
+        android:layout_below="@+id/instructionsEditText"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/Ingredients" />
+
+    <EditText
+        android:id="@+id/ratingEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ingredientsEditText"
+        android:layout_below="@+id/ingredientsEditText"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/Rating" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ratingEditText"
+        android:layout_marginTop="62dp"
+        android:onClick="addButtonClicked"
+        android:text="@string/add_recipe" />
+</RelativeLayout>

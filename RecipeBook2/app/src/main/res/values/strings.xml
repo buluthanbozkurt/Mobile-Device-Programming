@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Recipe Book</string>
+    <string name="add_recipe">Add Recipe</string>
+    <string name="Recipe_Name">Recipe Name</string>
+    <string name="Instructions">Instructions</string>
+    <string name="Ingredients">Ingredients</string>
+    <string name="Rating">Rating</string>
+    <string name="save_recipe">Save Recipe</string>
+    <string name="SortRating">Sort Rating</string>
+    <string name="sort_by_title">Sort by Title</string>
+    <string name="sort_by_rating">Sort by Rating</string>
+    <string name="NEW_RATING">New Rating</string>
+</resources>

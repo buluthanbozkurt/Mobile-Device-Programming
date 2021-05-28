@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRunSessionActivity">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="413dp"
+        android:layout_height="54dp"
+        android:stretchColumns="*"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:id="@+id/firstRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/distanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/kilometres_run"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/timeElapsedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#b0b0b0"
+                android:padding="18dip"
+                android:text="@string/time_elapsed"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="324dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/Name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/addNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addNameEditText"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/runFeelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/notesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:gravity="center"
+        android:text="@string/any_notes"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addNotesEditText"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/addNotesEditText"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/save_activity"
+        android:onClick="onSaveClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/runFeelTextView"
+        android:layout_width="284dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="@string/how_did_this_run_feel"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="377dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/notesTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/veryBadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="veryBadClicked"
+                android:text="Very Bad" />
+
+            <Button
+                android:id="@+id/badButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="badClicked"
+                android:text="@string/bad" />
+
+
+            <Button
+                android:id="@+id/goodButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goodClicked"
+                android:text="@string/Good" />
+
+            <Button
+                android:id="@+id/veryGoodButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="veryGoodClicked"
+                android:text="@string/very_good" />
+        </TableRow>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

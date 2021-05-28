@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/recipeNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="40dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/instructionsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/recipeNameTV"
+        android:layout_below="@+id/recipeNameTV"
+        android:layout_marginTop="19dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/ingredientsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/instructionsTV"
+        android:layout_below="@+id/instructionsTV"
+        android:layout_marginTop="12dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/ratingTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ingredientsTV"
+        android:layout_below="@+id/ingredientsTV"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/newRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingTV"
+        android:layout_alignStart="@+id/ratingTV"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/NEW_RATING" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingTV"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="152dp"
+        android:onClick="updateRatingButton"
+        android:text="@string/save_recipe" />
+</RelativeLayout>
